@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#login .scrollbox {
+    width: 100dvw;
+    height: 100px;
+    overflow-y: auto;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 150%;
+}
+
+.boxgradient {
+    width: calc(100% - 2rem);
+    height: 10rem;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(117, 117, 117, 1) 100%);
+}
+
+.boxgradient2 {
+    width: 100%;
+    height: 10rem;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(117, 117, 117, 1) 100%);
+}
+
+.box .boxgradient2 {
+    background: none;
+}
+
+.boximage {
+    width: 100%;
+    height: 10rem;
+    background-image: url("https://picsum.photos/400/250");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
