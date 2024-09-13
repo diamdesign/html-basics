@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --maincolor: royalblue;
+    --small: 1rem;
+    --fsub: Arial, Helvetica, sans-serif;
+    --fheading: "Times New Roman", Times, serif;
+    --fpara: "Courier New", Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    background: white;
+}
+#divid {
+    background: green;
+    width: 2rem;
+    height: 2rem;
+}
+
+.nameofclass {
+    background: var(--maincolor);
+    width: 1rem;
+    height: 1rem;
+    transform: rotate(45deg);
+}
+
+.margin {
+    width: 12.5rem;
+    height: 5rem;
+    border: 0.125rem dashed #000000;
+    background: #f2f2f2;
+    margin: var(--small);
+}
+
+.padding {
+    position: relative;
+    width: 12.5rem;
+    border: 0.0625rem solid black;
+    padding: 1rem;
+    background: rgba(225, 238, 123, 0.464);
+}
+
+.padding:before {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    background: black;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.padding:after {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    background: red;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.ptest {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: rgb(240, 49, 49);
+}
+
+.ptest:hover {
+    cursor: pointer;
+    outline: 3px solid var(--maincolor);
+}
+
+div.class1 {
+    border: 1px solid gray;
+}
+
+[data-test] {
+    margin: 1rem;
+    padding: 1rem;
+    background: red;
+}
+
+.class1,
+.class2 {
+    background: yellow;
+}
+
+div p:nth-child(2n) {
+    color: var(--maincolor);
+}
+div p:first-child:first-letter {
+    color: green;
+}
+
+.button {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.button:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.button:visited {
+    color: var(--maincolor);
+}
+
+.button:active {
+    color: yellow;
+}
